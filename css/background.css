@@ -1,0 +1,62 @@
+html{
+        overflow-x: hidden;
+        overflow-y: scroll;
+        margin:0;padding:0;
+}
+
+img{
+    pointer-events:none;
+}
+
+body{
+	/*background-image: url(背景.png);*/
+	background-repeat:no-repeat;
+	overflow :clip;
+    background-color: #F5F3E7;
+    position:relative;
+    font-family: "meiryo","HiraKakuProN-W3","ヒラギノ明朝 ProN W3",sans-serif;
+    margin:0;padding:0;
+}
+
+#wrapper{
+    width:100%;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    position: absolute;
+    top :0px;
+    left:0px;
+    z-index:-4;
+    align-items: center;
+
+}
+  
+
+.topbar{
+    background-color:#429eab;
+    color: #F5F3E7;
+    font-weight: normal;
+    font-family: "meiryo","HiraKakuProN-W3","ヒラギノ明朝 ProN W3",sans-serif;
+    position: fixed;
+    top:0px;
+    left:0px;
+    width :100%;
+    height:4vw;
+    z-index: 10;
+    font-size:3vw;
+}
+
+.adjustsize{
+    height:3vw;
+    width: 3vw;
+}
+
+
+canvas{
+    position: fixed;
+    bottom: 0px;
+    left:0px;
+    width: 100%;
+    height: 100%;
+    z-index:-5;
+}

@@ -1,0 +1,81 @@
+
+.questionlist{
+  color:#28424D;
+  text-align:center;
+  top :5vw;
+  width:100%;
+  position :relative;
+  display:block;
+  z-index: 4;
+}
+
+.answer {
+  display: inline-block;
+  padding: 2%;
+  font-size: 3vw;
+  font-weight: normal;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #F5F3E7;
+  background-color: #28424D;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 4px #999;
+  text-align: center;
+  margin: 3% 2% 3% 2%;
+  width:40%;
+}
+
+.answer:hover {background-color: #429EAB}
+
+.answer:active {
+  font-weight: bold;
+  background-color: #429EAB;
+  box-shadow: 0 4px #666;
+  transform: translateY(4px);
+}
+
+.question {
+  display :none;
+  font-weight:bold;
+  border-radius: 15px;
+  text-align:center;
+  font-size :3vw;
+  font-family: "meiryo","HiraKakuProN-W3","ヒラギノ明朝 ProN W3",sans-serif;
+  padding:5vw;
+}
+
+.backbutton{
+  display:block;
+  cursor: pointer;
+  border-radius: 3vw;
+  padding: 1vw;
+  font-size: 2vw;
+  color: #F5F3E7;
+  box-shadow: 0 4px #999;
+  text-align: center;
+  background-color: #28424D;
+  width:fit-content;
+  margin-left:5vw;
+}
+
+.backbutton:active {
+  font-weight: bold;
+  background-color: #429EAB;
+  box-shadow: 0 4px #666;
+  transform: translateY(4px);
+  margin-top: 1vw;
+}
+
+.pic{
+  width:100% ;
+  height: auto;
+}
+
+.illust{
+  width: 60%;
+  height: auto;
+}
+

@@ -1,0 +1,40 @@
+.intro{
+  color: #28424D;
+  font-size: 3vw;
+  position:relative;
+  font-family: "meiryo","HiraKakuProN-W3","ヒラギノ明朝 ProN W3",sans-serif;
+  display :inline-block;
+  text-align:right;
+  padding:3% 3% 0 0;
+  margin-top: 5%;
+  margin-right: 2%;
+  line-height: 150%;
+  right: 0;
+  width: 100%;
+}
+
+.miniintro{
+  color: #F5F3E7;
+  font-size: 2vw;
+  font-weight: 500;
+  position:relative;
+  font-family: "meiryo","HiraKakuProN-W3","ヒラギノ明朝 ProN W3",sans-serif;
+  display :inline-block;
+  text-align:center;
+  margin-top: 5%;
+  line-height: 200%;
+  width: 100%;
+}
+
+.adjust{
+  display: inline-block;
+  filter: brightness(0%);
+  text-align: right; 
+  margin-top: 5%;
+}
+
+.ad{
+  width: 20%;
+  height: auto;
+  margin-left: -8%;
+}

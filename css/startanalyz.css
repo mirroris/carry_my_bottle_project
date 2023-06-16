@@ -1,0 +1,17 @@
+.startanalyz{
+  display: block;
+  font-size: 5vw;
+  cursor: pointer;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #28424D;
+  border: none;
+  border-radius: 15px;
+  width: 50%;
+  font-weight: normal;
+  font-family: "meiryo","HiraKakuProN-W3","ヒラギノ明朝 ProN W3",sans-serif;
+  text-align:center;
+  margin: 5% auto 5% auto;
+  z-index: 5;
+}

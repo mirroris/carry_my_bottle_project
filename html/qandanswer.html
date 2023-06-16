@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel = "stylesheet" href = "background.css">
+  <link rel = "stylesheet" href = "question.css">
+  <link rel = "stylesheet" href = "startanalyz.css">
+  <link rel = "stylesheet" href = "result.css">
+</head>
+  <body>
+    <div id = "wrapper"><canvas id = "waveCanvas"></canvas></div>
+        <div class = "topbar" id = "topbar"><img src="icon_CRBT.png" class="adjustsize" > 大阪大学マイボトル推進プロジェクトCarry My Bottle</div>
+      
+      <div class = "questionlist">
+        <div class = "question" id = "question1">
+          Q.1 あなたが一番心引かれる風景はどれ？
+          <a class="answer"  id = "answer1-1" onclick="oneofFour('11')"><img src="Q1retro.jpg" class="pic"></a>
+          <a class="answer"  id = "answer1-2" onclick="oneofFour('12')"><img src="Q1kinndai.jpg" class="pic"></a>
+          <a class="answer"  id = "answer1-3" onclick="oneofFour('13')"><img src="Q1kinnmirai.jpg" class="pic"></a>
+          <a class="answer"  id = "answer1-4" onclick="oneofFour('14')"><img src="Q1midori.jpg" class="pic"></a>
+        </div>
+
+        <div class = "question" id = "question2">
+          Q.2 教室で座りたい席はどこ？<br>
+          <img src="Q2room.png" class="pic"><br>
+          <a class="answer"  id = "answer2-1" onclick="oneofFour('21')">①前列･真ん中</a>
+          <a class="answer" id = "answer2-2"  onclick="oneofFour('22')">②右端･左端</a>
+          <a class="answer"  id = "answer2-3" onclick="oneofFour('23')">③後列</a>
+          <div class = "backbutton" onclick="back()">前の質問に戻る</div>
+        </div>
+
+        <div class = "question" id = "question3">
+          Q.3 突然午後から授業が休みになった。どうする？<br>
+          <a class="answer"  id = "answer3-1" onclick="oneofFour('31')"> <img src="Q3talking.png" class="illust"><br> 友達とおしゃべりする</a>
+          <a class="answer" id = "answer3-2" onclick="oneofFour('32')"> <img src="Q3study.png" class="illust"><br> 図書館で読書･勉強する</a>
+          <a class="answer"  id = "answer3-3" onclick="oneofFour('33')"> <img src="Q3active.png" class="illust"><br> 部活やサークルに行く</a>
+          <a class="answer" id = "answer3-4" onclick="oneofFour('34')"> <img src="Q3train.png" class="illust"><br> 直帰する</a>
+          <div class = "backbutton" onclick="back()">前の質問に戻る</div>
+        </div>
+        
+        <div class = "question" id = "question4">
+          Q.4 次のうちランチで食べたいメニューはどれ？<br>
+          <a class="answer"  id = "answer4-1" onclick="oneofFour('41')"><img src="Q4pasuta.jpg" class="pic">700円のスパゲッティ</a>
+          <a class="answer"  id = "answer4-2" onclick="oneofFour('42')"><img src="Q4tennma.JPG" class="pic">500円の天津麻婆丼</a>
+          <a class="answer"  id = "answer4-3" onclick="oneofFour('43')"><img src="Q4pan.jpg" class="pic">300円の菓子パン</a>
+          <div class = "backbutton" onclick="back()">前の質問に戻る</div>
+        </div>
+
+        <div class = "question" id = "question5">
+          Q.5 あなたが一番直感的に心が傷む写真はどれ？
+          <a class="answer" id = "answer5-1" onclick="oneofFour('51')"><img src="Q5umigame.jpg" class="pic"></a>
+          <a class="answer" id = "answer5-2"  onclick="oneofFour('52')"><img src="Q5taikiosen.jpg" class="pic"></a>
+          <a class="answer" id = "answer5-3"  onclick="oneofFour('53')"><img src="Q5kaimennjosho.jpg" class="pic"></a>
+          <a class="answer" id = "answer5-4"  onclick="oneofFour('54')"><img src="Q5gomi.jpg" class="pic"></a>
+          <div class = "backbutton" onclick="back()">前の質問に戻る</div>
+        </div>
+
+        <div class = "question" id = "question6">
+          <a class = "startanalyz" onclick="accumulate()">診断結果を見る</a>
+          <div class = "backbutton" onclick="back()">前の質問に戻る</div>
+        </div>
+      </div>
+      
+        <!--
+          キャリボトの皆さん
+          学祭がうまくいきますように
+                          末永
+          -->
+          <div class = "result" id = "resultsheet"> 
+            <div class = "character"><img src="result1.png" class="resize"></div><br> //キャラ
+            <div id="bold">あなたにおすすめのエコアイテムは<br>「マイバック」</div><br> //結果情報
+    
+          <div class = "iteminfo" id = "iteminfo">  //付加情報
+            <div id="normal">
+              <div id = "critical">フ</div>ットワークが軽く、何事にも意欲的で周囲の人を引っ張っていくリーダー的な性格です。<br>
+                実はアーティスティックな一面も。<br>
+                身体を動かすことが好きで、動きやすくカジュアルなファッションがお似合いです！<br>
+                ファッションに柄のマイバックを取り入れる事で、より一層あなたの魅力が光ります✨<br>
+            </div>
+          </div>
+          <div class = "beans"> //豆知識
+            <div id = "bold">【豆知識】本当にエコバックってエコなの？？</div>
+            ...
+    
+          </div>
+          </div>
+
+          <div id = "hault">Twitterで結果を共有しよう <br><a href="https://twitter.com/share?ref_src=twsrc%5Etfw" id = "final" class="twitter-share-button" data-size="large" data-text="あなたも是非阪大キャリボト診断を！" data-url="https://mirroris.github.io/CRBT/" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
+
+
+  <!-- JavaScriptファイルの読み込み-->
+      <script src = "foreign.js"></script>
+      <script src = "wave.js"></script>
+    <!-- make first question visible --> 
+    <script > 
+      var num = 1;
+      let initquestion = document.getElementById("question1");
+      initquestion.style.display = "block";
+    </script>
+  </body>
+</html> 
