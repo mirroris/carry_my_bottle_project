@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel = "stylesheet" href = "css/background.css">
-  <link rel = "stylesheet" href = "css/question.css">
-  <link rel = "stylesheet" href = "css/startanalyz.css">
-  <link rel = "stylesheet" href = "css/result.css">
+  <link rel = "stylesheet" href = "/css/background.css">
+  <link rel = "stylesheet" href = "/css/question.css">
+  <link rel = "stylesheet" href = "/css/startanalyz.css">
+  <link rel = "stylesheet" href = "/css/result.css">
 </head>
   <body>
     <div id = "wrapper"><canvas id = "waveCanvas"></canvas></div>
-        <div class = "topbar" id = "topbar"><img src="img/icon_CRBT.png" class="adjustsize" > 大阪大学マイボトル推進プロジェクトCarry My Bottle</div>
+        <div class = "topbar" id = "topbar"><img src="/img/icon_CRBT.png" class="adjustsize" > 大阪大学マイボトル推進プロジェクトCarry My Bottle</div>
       
       <div class = "questionlist">
         <div class = "question" id = "question1">
           Q.1 あなたが一番心引かれる風景はどれ？
-          <a class="answer"  id = "answer1-1" onclick="oneofFour('11')"><img src="img/Q1retro.jpg" class="pic"></a>
-          <a class="answer"  id = "answer1-2" onclick="oneofFour('12')"><img src="img/Q1kinndai.jpg" class="pic"></a>
-          <a class="answer"  id = "answer1-3" onclick="oneofFour('13')"><img src="img/Q1kinnmirai.jpg" class="pic"></a>
-          <a class="answer"  id = "answer1-4" onclick="oneofFour('14')"><img src="img/Q1midori.jpg" class="pic"></a>
+          <a class="answer"  id = "answer1-1" onclick="oneofFour('11')"><img src="/img/Q1retro.jpg" class="pic"></a>
+          <a class="answer"  id = "answer1-2" onclick="oneofFour('12')"><img src="/img/Q1kinndai.jpg" class="pic"></a>
+          <a class="answer"  id = "answer1-3" onclick="oneofFour('13')"><img src="/img/Q1kinnmirai.jpg" class="pic"></a>
+          <a class="answer"  id = "answer1-4" onclick="oneofFour('14')"><img src="/img/Q1midori.jpg" class="pic"></a>
         </div>
 
         <div class = "question" id = "question2">
           Q.2 教室で座りたい席はどこ？<br>
-          <img src="img/Q2room.png" class="pic"><br>
+          <img src="/img/Q2room.png" class="pic"><br>
           <a class="answer"  id = "answer2-1" onclick="oneofFour('21')">①前列･真ん中</a>
           <a class="answer" id = "answer2-2"  onclick="oneofFour('22')">②右端･左端</a>
           <a class="answer"  id = "answer2-3" onclick="oneofFour('23')">③後列</a>
@@ -30,27 +30,27 @@
 
         <div class = "question" id = "question3">
           Q.3 突然午後から授業が休みになった。どうする？<br>
-          <a class="answer"  id = "answer3-1" onclick="oneofFour('31')"> <img src="img/Q3talking.png" class="illust"><br> 友達とおしゃべりする</a>
-          <a class="answer" id = "answer3-2" onclick="oneofFour('32')"> <img src="img/Q3study.png" class="illust"><br> 図書館で読書･勉強する</a>
-          <a class="answer"  id = "answer3-3" onclick="oneofFour('33')"> <img src="img/Q3active.png" class="illust"><br> 部活やサークルに行く</a>
-          <a class="answer" id = "answer3-4" onclick="oneofFour('34')"> <img src="img/Q3train.png" class="illust"><br> 直帰する</a>
+          <a class="answer"  id = "answer3-1" onclick="oneofFour('31')"> <img src="/img/Q3talking.png" class="illust"><br> 友達とおしゃべりする</a>
+          <a class="answer" id = "answer3-2" onclick="oneofFour('32')"> <img src="/img/Q3study.png" class="illust"><br> 図書館で読書･勉強する</a>
+          <a class="answer"  id = "answer3-3" onclick="oneofFour('33')"> <img src="/img/Q3active.png" class="illust"><br> 部活やサークルに行く</a>
+          <a class="answer" id = "answer3-4" onclick="oneofFour('34')"> <img src="/img/Q3train.png" class="illust"><br> 直帰する</a>
           <div class = "backbutton" onclick="back()">前の質問に戻る</div>
         </div>
         
         <div class = "question" id = "question4">
           Q.4 次のうちランチで食べたいメニューはどれ？<br>
-          <a class="answer"  id = "answer4-1" onclick="oneofFour('41')"><img src="img/Q4pasuta.jpg" class="pic">700円のスパゲッティ</a>
-          <a class="answer"  id = "answer4-2" onclick="oneofFour('42')"><img src="img/Q4tennma.JPG" class="pic">500円の天津麻婆丼</a>
-          <a class="answer"  id = "answer4-3" onclick="oneofFour('43')"><img src="img/Q4pan.jpg" class="pic">300円の菓子パン</a>
+          <a class="answer"  id = "answer4-1" onclick="oneofFour('41')"><img src="/img/Q4pasuta.jpg" class="pic">700円のスパゲッティ</a>
+          <a class="answer"  id = "answer4-2" onclick="oneofFour('42')"><img src="/img/Q4tennma.JPG" class="pic">500円の天津麻婆丼</a>
+          <a class="answer"  id = "answer4-3" onclick="oneofFour('43')"><img src="/img/Q4pan.jpg" class="pic">300円の菓子パン</a>
           <div class = "backbutton" onclick="back()">前の質問に戻る</div>
         </div>
 
         <div class = "question" id = "question5">
           Q.5 あなたが一番直感的に心が傷む写真はどれ？
-          <a class="answer" id = "answer5-1" onclick="oneofFour('51')"><img src="img/Q5umigame.jpg" class="pic"></a>
-          <a class="answer" id = "answer5-2"  onclick="oneofFour('52')"><img src="img/Q5taikiosen.jpg" class="pic"></a>
-          <a class="answer" id = "answer5-3"  onclick="oneofFour('53')"><img src="img/Q5kaimennjosho.jpg" class="pic"></a>
-          <a class="answer" id = "answer5-4"  onclick="oneofFour('54')"><img src="img/Q5gomi.jpg" class="pic"></a>
+          <a class="answer" id = "answer5-1" onclick="oneofFour('51')"><img src="/img/Q5umigame.jpg" class="pic"></a>
+          <a class="answer" id = "answer5-2"  onclick="oneofFour('52')"><img src="/img/Q5taikiosen.jpg" class="pic"></a>
+          <a class="answer" id = "answer5-3"  onclick="oneofFour('53')"><img src="/img/Q5kaimennjosho.jpg" class="pic"></a>
+          <a class="answer" id = "answer5-4"  onclick="oneofFour('54')"><img src="/img/Q5gomi.jpg" class="pic"></a>
           <div class = "backbutton" onclick="back()">前の質問に戻る</div>
         </div>
 
@@ -66,7 +66,7 @@
                           末永
           -->
           <div class = "result" id = "resultsheet"> 
-            <div class = "character"><img src="img/result1.png" class="resize"></div><br> //キャラ
+            <div class = "character"><img src="/img/result1.png" class="resize"></div><br> //キャラ
             <div id="bold">あなたにおすすめのエコアイテムは<br>「マイバック」</div><br> //結果情報
     
           <div class = "iteminfo" id = "iteminfo">  //付加情報
@@ -88,8 +88,8 @@
 
 
   <!-- JavaScriptファイルの読み込み-->
-      <script src = "js/foreign.js"></script>
-      <script src = "js/wave.js"></script>
+      <script src = "/js/foreign.js"></script>
+      <script src = "/js/wave.js"></script>
     <!-- make first question visible --> 
     <script > 
       var num = 1;
